@@ -1,15 +1,22 @@
 <h1>Task Manager</h1>
 <h4>This is an application for managing a to do list.</h4>
 
+<!-- <button type="button" name="button">
+  <a href="/tasks/index">Tasks 1</a>
+</button><br /> -->
 
-<% x = 1 + 1 %><br />
+<!-- <button type="button" name="button">
+  <% #= link_to('Tasks 2', '/tasks/index') %>
+</button><br /> -->
 
-<%= x %><br />
+<!-- <button type="button" name="button">
+  <%#= link_to('Tasks', {controller: 'tasks', action: 'index'}) %>
+</button><br /> -->
 
-<% tasks = ['Fold laundry', 'Sweep porch', 'Wash dishes', 'Mow lawn'] %>
+<button type="button" name="button">
+  <%= link_to('Tasks', {controller: 'tasks', action: 'index', page: 1}) %>
+</button><br />
 
-<ul>
-  <% tasks.each do |task| %>
-    <li><%= task %></li>
-  <% end %>
-</ul>
+<button type="button" name="button">
+  <%= link_to('About', {action: 'about', page: 5, id: 20}) %>
+</button><br />
