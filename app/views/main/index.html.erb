@@ -1,22 +1,7 @@
 <h1>Task Manager</h1>
 <h4>This is an application for managing a to do list.</h4>
 
-<!-- <button type="button" name="button">
-  <a href="/tasks/index">Tasks 1</a>
-</button><br /> -->
-
-<!-- <button type="button" name="button">
-  <% #= link_to('Tasks 2', '/tasks/index') %>
-</button><br /> -->
-
-<!-- <button type="button" name="button">
-  <%#= link_to('Tasks', {controller: 'tasks', action: 'index'}) %>
-</button><br /> -->
-
-<button type="button" name="button">
-  <%= link_to('Tasks', {controller: 'tasks', action: 'index', page: 1}) %>
-</button><br />
-
-<button type="button" name="button">
-  <%= link_to('About', {action: 'about', page: 5, id: 20}) %>
-</button><br />
+<%= link_to('Categories', categories_path) %>
+<%= link_to('Tasks', tasks_path(page: 1)) %>
+<%# link_to('Tasks', {controller: 'tasks', action: 'index', page: 1}) %>
+<%= link_to('About', {action: 'about', page: 5, id: 20}) %>
